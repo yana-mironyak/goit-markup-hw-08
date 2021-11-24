@@ -8,28 +8,46 @@
   --logo-text-color: #000000;
   --accent-btn-color: #188ce8;
   --primary-bg-color: #ffffff;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* ЛОГО */
 
 .logo {
   color: var(--accent-text-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 .second-part {
   color: var(--logo-text-color);
+  font-family: "Raleway", sans-serif;
 }
 
 /* ШАПКА */
 
 .site-nav .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .active-page {
+  color: var(--accent-text-color);
 }
 
 .list {
@@ -42,6 +60,8 @@ body {
 
 .contact .link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
 }
 
 .link:hover,
@@ -57,30 +77,56 @@ body {
 
 .hero-title {
   color: var(--hero-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .hero-btn {
-  background-color: var(--accent-text-color);
+  font-family: Roboto;
+  background-color: var(--accent-btn-color);
   color: var(--hero-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /* ОСОБЕННОСТИ */
 
 .feature-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ */
 
-.work-title {
+.speciality-title,
+.team-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 
 /* КОМАНДА */
 
-.team-title,
 .staff-name {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.position {
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 /* ПОДВАЛ */
@@ -88,11 +134,43 @@ body {
 .footer-section {
   background-color: var(--contrast-bg);
 }
-footer .second-part {
+.footer-section .second-part {
   color: var(--hero-text-color);
 }
 
-.adress-section .link,
-.adress-text {
+.adress-section {
   color: var(--hero-text-color);
+  font-style: normal;
+}
+
+.adress-section .link {
+  color: var(--footer-link-color);
+}
+
+.buttons {
+  background-color: var(--secondary-bg);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.buttons:hover,
+.buttons:focus {
+  background-color: var(--accent-text-color);
+  color: var(--hero-text-color);
+}
+
+.works-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works-item {
+  font-size: 16px;
+  line-height: 1.86;
 }
