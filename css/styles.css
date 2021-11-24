@@ -1,0 +1,98 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --hero-text-color: #ffffff;
+  --accent-text-color: #2196f3;
+  --secondary-bg: #f5f4fa;
+  --contrast-bg: #2f303a;
+  --logo-text-color: #000000;
+  --accent-btn-color: #188ce8;
+  --primary-bg-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+}
+
+/* ЛОГО */
+
+.logo {
+  color: var(--accent-text-color);
+}
+
+.second-part {
+  color: var(--logo-text-color);
+}
+
+/* ШАПКА */
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.contact .link {
+  color: var(--primary-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
+}
+
+/* ГЕРОЙ */
+
+.hero-section {
+  background-color: var(--contrast-bg);
+}
+
+.hero-title {
+  color: var(--hero-text-color);
+}
+
+.hero-btn {
+  background-color: var(--accent-text-color);
+  color: var(--hero-text-color);
+}
+
+/* ОСОБЕННОСТИ */
+
+.feature-title {
+  color: var(--title-text-color);
+}
+
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ */
+
+.work-title {
+  color: var(--title-text-color);
+}
+
+/* КОМАНДА */
+
+.team-title,
+.staff-name {
+  color: var(--title-text-color);
+}
+
+/* ПОДВАЛ */
+
+.footer-section {
+  background-color: var(--contrast-bg);
+}
+footer .second-part {
+  color: var(--hero-text-color);
+}
+
+.adress-section .link,
+.adress-text {
+  color: var(--hero-text-color);
+}
