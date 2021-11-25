@@ -15,7 +15,6 @@ body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -65,7 +64,9 @@ body {
 }
 
 .link:hover,
-.link:focus {
+.link:focus,
+.adress-section .link:hover,
+.adress-section .link:focus {
   color: var(--accent-text-color);
 }
 
@@ -85,8 +86,8 @@ body {
 }
 
 .hero-btn {
-  font-family: Roboto;
-  background-color: var(--accent-btn-color);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--accent-text-color);
   color: var(--hero-text-color);
   font-weight: 700;
   font-size: 16px;
@@ -95,6 +96,11 @@ body {
   letter-spacing: 0.06em;
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-btn-color);
+  cursor: pointer;
+}
 /* ОСОБЕННОСТИ */
 
 .feature-title {
@@ -116,6 +122,14 @@ body {
 }
 
 /* КОМАНДА */
+
+.team-section {
+  background-color: var(--secondary-bg);
+}
+
+.team-item {
+  background-color: var(--primary-bg-color);
+}
 
 .staff-name {
   color: var(--title-text-color);
@@ -147,17 +161,23 @@ body {
   color: var(--footer-link-color);
 }
 
-.buttons {
+.button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.example-btn {
   background-color: var(--secondary-bg);
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
-  text-align: center;
+  cursor: pointer;
 }
 
-.buttons:hover,
-.buttons:focus {
+.example-btn:hover,
+.example-btn:focus {
   background-color: var(--accent-text-color);
   color: var(--hero-text-color);
 }
