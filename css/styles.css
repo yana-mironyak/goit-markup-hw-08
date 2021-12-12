@@ -431,7 +431,6 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--hero-text-color);
-  text-align: center;
 }
 
 .social-web .link {
@@ -440,6 +439,11 @@ p {
   align-items: center;
   height: 100%;
   border-radius: 50%;
+  color: #afb1b8;
+}
+
+.social-web .footer-link {
+  color: var(--hero-text-color);
 }
 
 .icon-instagram,
@@ -448,7 +452,7 @@ p {
 .icon-linkedin {
   width: 20px;
   height: 20px;
-  fill: var(--hero-text-color);
+  fill: currentColor;
 }
 
 /* ПОРТФОЛИО */
