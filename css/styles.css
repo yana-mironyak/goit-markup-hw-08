@@ -82,6 +82,8 @@ p {
 
 .site-nav .link,
 .contact .link {
+  position: relative;
+
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -92,6 +94,22 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.site-nav .link.active-page::after {
+  content: "";
+
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-text-color);
+  border-radius: 2px;
+
+  transition: opacity 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact .link .site-nav .active-page {
@@ -527,6 +545,33 @@ p {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-wrp {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--hero-text-color);
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.thumb:hover .overlay-wrp {
+  transform: translateY(0);
+}
+
 .example-title {
   margin-top: 0;
   margin-bottom: 4px;
@@ -546,4 +591,51 @@ p {
 .example-item {
   font-size: 16px;
   line-height: 1.86;
+}
+
+.backdrope {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrope.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+
+  background-color: var(--primary-bg-color);
+}
+
+.close-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-bg-color);
+}
+
+.close-icon {
+  fill: currentColor;
 }
