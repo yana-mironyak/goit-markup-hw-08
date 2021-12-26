@@ -469,22 +469,23 @@
 
           <div class="form-field">
             <label for="user-name">Имя</label>
-            <input type="text" name="user-name" />
+            <input class="form-input" type="text" name="user-name" />
             <svg class="icon-person" width="18" height="18">
-              <use href="images/sprite.svg#icon-person"></use>
+              <use href="./images/sprite.svg#icon-person"></use>
             </svg>
           </div>
 
           <div class="form-field">
             <label for="tel">Телефон</label>
-            <input type="tel" name="tel" />
+            <input class="form-input" type="tel" name="tel" />
             <svg class="icon-phone" width="18" height="18">
               <use href="images/sprite.svg#icon-phone"></use>
             </svg>
           </div>
 
           <div class="form-field">
-            <label for="mail">Почта</label> <input type="email" name="mail" />
+            <label for="mail">Почта</label>
+            <input class="form-input" type="email" name="mail" />
             <svg class="icon-email" width="18" height="18">
               <use href="images/sprite.svg#icon-email"></use>
             </svg>
@@ -497,6 +498,23 @@
               id=""
               placeholder="Введите текст"
             ></textarea>
+          </div>
+
+          <div class="confirmation">
+            <label for="confirm">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="confirm"
+                value="confirm"
+                id="confirm"
+              />
+              <svg class="icon-check" width="16" height="15">
+                <use href="images/sprite.svg#icon-check"></use>
+              </svg>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="link rules">Условия договора</a></label
+            >
           </div>
 
           <button class="button send-btn" type="submit">Отправить</button>
