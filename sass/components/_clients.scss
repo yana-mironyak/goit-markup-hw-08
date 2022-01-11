@@ -1,0 +1,55 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-logo {
+  display: flex;
+  align-items: center;
+}
+
+.clients__container {
+  @extend %container;
+}
+
+.clients-logo {
+  display: flex;
+  align-items: center;
+}
+
+.clients-logo {
+  display: flex;
+  align-items: center;
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.clients-logo__item {
+  margin-right: 30px;
+  height: 92px;
+  width: 170px;
+  cursor: pointer;
+}
+
+.clients-logo__icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.clients-logo__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-text-color;
+  }
+}

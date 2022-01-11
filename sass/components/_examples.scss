@@ -1,0 +1,47 @@
+.examples {
+  display: block;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.examples__container {
+  @extend %container;
+}
+
+.examples__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.examples__item {
+  margin-right: 9px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.example__btn {
+  @extend %button;
+  padding: 6px 22px;
+  background-color: $secondary-bg;
+  color: $title-text-color;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  &--current {
+    background-color: $accent-text-color;
+    color: $hero-text-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $hero-text-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

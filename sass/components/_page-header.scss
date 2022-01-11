@@ -1,0 +1,18 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__logo--color {
+  color: $logo-text-color;
+  font-family: "Raleway", sans-serif;
+}
+
+.page-header__container {
+  @extend %container;
+  display: flex;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}

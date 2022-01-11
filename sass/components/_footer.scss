@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $contrast-bg;
+}
+
+.footer__container {
+  @extend %container;
+  display: flex;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__logo--color {
+  color: $logo-text-color;
+  font-family: "Raleway", sans-serif;
+  color: $hero-text-color;
+}

@@ -1,0 +1,58 @@
+.subscribe {
+  margin-left: 93px;
+  padding-top: 12px;
+}
+
+.subscribe__form {
+  display: flex;
+}
+
+.subscribe__title {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $hero-text-color;
+}
+
+.subscribe__form input {
+  width: 358px;
+  padding-left: 16px;
+  background-color: $contrast-bg;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  color: $hero-text-color;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: $accent-text-color;
+    outline: none;
+  }
+}
+
+.subscribe-btn {
+  @extend %button;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 12px;
+  background-color: $accent-text-color;
+  color: $hero-text-color;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  min-width: 200px;
+}
+
+.subscribe__icon {
+  fill: currentColor;
+  margin-left: 10px;
+}

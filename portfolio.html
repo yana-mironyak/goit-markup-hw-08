@@ -13,39 +13,45 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка -->
-    <header class="header-border">
-      <div class="container main-header">
+    <header class="page-header">
+      <div class="container page-header__container">
         <nav class="main-nav">
-          <a href="./index.html" class="logo link"
-            >Web<span class="second-part">Studio</span>
+          <a href="./index.html" class="logo"
+            >Web<span class="page-header__logo--color">Studio</span>
           </a>
 
-          <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link">Студия</a>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студия</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link active-page">Портфолио</a>
+            <li class="site-nav__item">
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--active"
+                >Портфолио</a
+              >
             </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="contact list">
-          <li class="item" lang="en">
-            <a href="mailto:info@devstudio.com" class="link"
-              ><svg class="contact-icon" width="16" height="12">
+        <ul class="contacts">
+          <li class="contacts__item" lang="en">
+            <a href="mailto:info@devstudio.com" class="contacts__link"
+              ><svg class="contacts__icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link"
-              ><svg class="contact-icon" width="10" height="16">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link"
+              ><svg class="contacts__icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -57,40 +63,34 @@
 
     <main>
       <!-- Герой -->
-      <section class="section examples">
-        <div class="container">
-          <ul class="example-list list">
-            <li class="item">
-              <button type="button" class="button example-btn current">
+      <section class="examples">
+        <div class="container examples__container">
+          <ul class="examples__list">
+            <li class="examples__item">
+              <button type="button" class="example__btn example__btn--current">
                 Все
               </button>
             </li>
-            <li class="item">
-              <button type="button" class="button example-btn">
-                Веб-сайты
-              </button>
+            <li class="examples__item">
+              <button type="button" class="example__btn">Веб-сайты</button>
             </li>
-            <li class="item">
-              <button type="button" class="button example-btn">
-                Приложения
-              </button>
+            <li class="examples__item">
+              <button type="button" class="example__btn">Приложения</button>
             </li>
-            <li class="item">
-              <button type="button" class="button example-btn">Дизайн</button>
+            <li class="examples__item">
+              <button type="button" class="example__btn">Дизайн</button>
             </li>
-            <li class="item">
-              <button type="button" class="button example-btn">
-                Маркетинг
-              </button>
+            <li class="examples__item">
+              <button type="button" class="example__btn">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="example-pic list">
-            <li class="item">
-              <div class="thumb">
-                <a href="" class="link">
+          <ul class="pictures__list">
+            <li class="pictures__item">
+              <div class="pictures__thumb">
+                <a href="">
                   <img
-                    class="img-block"
+                    class="pictures__img"
                     src="./images/techno.jpg"
                     alt=""
                     width="370"
@@ -103,17 +103,17 @@
                 </div>
               </div>
 
-              <div class="example-wrapper">
-                <h2 class="example-title">Технокряк</h2>
-                <p class="example-item">Веб-сайт</p>
+              <div class="pic-wrapper">
+                <h2 class="pic-wrapper__title">Технокряк</h2>
+                <p class="pic-wrapper__item">Веб-сайт</p>
               </div>
             </li>
 
-            <li class="item">
-              <div class="thumb">
-                <a href="" class="link">
+            <li class="pictures__item">
+              <div class="pictures__thumb">
+                <a href="">
                   <img
-                    class="img-block"
+                    class="pictures__img"
                     src="./images/new-orlean.jpg"
                     alt=""
                     width="370"
@@ -124,17 +124,19 @@
                   шпионажа и атак на защищённые сервера конкурентов.
                 </div>
               </div>
-              <div class="example-wrapper">
-                <h2 class="example-title">Постер New Orlean vs Golden Star</h2>
-                <p class="example-item">Дизайн</p>
+              <div class="pic-wrapper">
+                <h2 class="pic-wrapper__title">
+                  Постер New Orlean vs Golden Star
+                </h2>
+                <p class="pic-wrapper__item">Дизайн</p>
               </div>
             </li>
 
-            <li class="item">
-              <div class="thumb">
-                <a href="" class="link">
+            <li class="pictures__item">
+              <div class="pictures__thumb">
+                <a href="">
                   <img
-                    class="img-block"
+                    class="pictures__img"
                     src="./images/seafood.jpg"
                     alt=""
                     width="370"
@@ -145,17 +147,17 @@
                   шпионажа и атак на защищённые сервера конкурентов.
                 </div>
               </div>
-              <div class="example-wrapper">
-                <h2 class="example-title">Ресторан Seafood</h2>
-                <p class="example-item">Приложение</p>
+              <div class="pic-wrapper">
+                <h2 class="pic-wrapper__title">Ресторан Seafood</h2>
+                <p class="pic-wrapper__item">Приложение</p>
               </div>
             </li>
 
-            <li class="item">
-              <div class="thumb">
-                <a href="" class="link">
+            <li class="pictures__item">
+              <div class="pictures__thumb">
+                <a href="">
                   <img
-                    class="img-block"
+                    class="pictures__img"
                     src="./images/prime.jpg"
                     alt=""
                     width="370"
@@ -166,17 +168,17 @@
                   шпионажа и атак на защищённые сервера конкурентов.
                 </div>
               </div>
-              <div class="example-wrapper">
-                <h2 class="example-title">Проект Prime</h2>
-                <p class="example-item">Маркетинг</p>
+              <div class="pic-wrapper">
+                <h2 class="pic-wrapper__title">Проект Prime</h2>
+                <p class="pic-wrapper__item">Маркетинг</p>
               </div>
             </li>
 
-            <li class="item">
-              <div class="thumb">
-                <a href="" class="link">
+            <li class="pictures__item">
+              <div class="pictures__thumb">
+                <a href="">
                   <img
-                    class="img-block"
+                    class="pictures__img"
                     src="./images/boxes.jpg"
                     alt=""
                     width="370"
@@ -187,17 +189,17 @@
                   шпионажа и атак на защищённые сервера конкурентов.
                 </div>
               </div>
-              <div class="example-wrapper">
-                <h2 class="example-title">Проект Boxes</h2>
-                <p class="example-item">Приложение</p>
+              <div class="pic-wrapper">
+                <h2 class="pic-wrapper__title">Проект Boxes</h2>
+                <p class="pic-wrapper__item">Приложение</p>
               </div>
             </li>
 
-            <li class="item">
-              <div class="thumb">
-                <a href="" class="link">
+            <li class="pictures__item">
+              <div class="pictures__thumb">
+                <a href="">
                   <img
-                    class="img-block"
+                    class="pictures__img"
                     src="./images/inspiration.jpg"
                     alt=""
                     width="370"
@@ -208,17 +210,17 @@
                   шпионажа и атак на защищённые сервера конкурентов.
                 </div>
               </div>
-              <div class="example-wrapper">
-                <h2 class="example-title">Inspiration has no Borders</h2>
-                <p class="example-item">Веб-сайт</p>
+              <div class="pic-wrapper">
+                <h2 class="pic-wrapper__title">Inspiration has no Borders</h2>
+                <p class="pic-wrapper__item">Веб-сайт</p>
               </div>
             </li>
 
-            <li class="item">
-              <div class="thumb">
-                <a href="" class="link">
+            <li class="pictures__item">
+              <div class="pictures__thumb">
+                <a href="">
                   <img
-                    class="img-block"
+                    class="pictures__img"
                     src="./images/limited-ed.jpg"
                     alt=""
                     width="370"
@@ -229,17 +231,17 @@
                   шпионажа и атак на защищённые сервера конкурентов.
                 </div>
               </div>
-              <div class="example-wrapper">
-                <h2 class="example-title">Издание Limited Edition</h2>
-                <p class="example-item">Дизайн</p>
+              <div class="pic-wrapper">
+                <h2 class="pic-wrapper__title">Издание Limited Edition</h2>
+                <p class="pic-wrapper__item">Дизайн</p>
               </div>
             </li>
 
-            <li class="item">
-              <div class="thumb">
-                <a href="" class="link">
+            <li class="pictures__item">
+              <div class="pictures__thumb">
+                <a href="">
                   <img
-                    class="img-block"
+                    class="pictures__img"
                     src="./images/lab.jpg"
                     alt=""
                     width="370"
@@ -250,17 +252,17 @@
                   шпионажа и атак на защищённые сервера конкурентов.
                 </div>
               </div>
-              <div class="example-wrapper">
-                <h2 class="example-title">Проект LAB</h2>
-                <p class="example-item">Маркетинг</p>
+              <div class="pic-wrapper">
+                <h2 class="pic-wrapper__title">Проект LAB</h2>
+                <p class="pic-wrapper__item">Маркетинг</p>
               </div>
             </li>
 
-            <li class="item">
-              <div class="thumb">
-                <a href="" class="link">
+            <li class="pictures__item">
+              <div class="pictures__thumb">
+                <a href="">
                   <img
-                    class="img-block"
+                    class="pictures__img"
                     src="./images/growing-bsns.jpg"
                     alt=""
                     width="370"
@@ -271,9 +273,9 @@
                   шпионажа и атак на защищённые сервера конкурентов.
                 </div>
               </div>
-              <div class="example-wrapper">
-                <h2 class="example-title">Growing Business</h2>
-                <p class="example-item">Приложение</p>
+              <div class="pic-wrapper">
+                <h2 class="pic-wrapper__title">Growing Business</h2>
+                <p class="pic-wrapper__item">Приложение</p>
               </div>
             </li>
           </ul>
@@ -283,47 +285,49 @@
 
     <!-- Подвал -->
     <footer class="footer">
-      <div class="container footer-wrapper">
-        <div class="adress-wrapper">
-          <a href="./index.html" class="logo link"
-            >Web<span class="second-part">Studio</span>
+      <div class="container footer__container">
+        <div>
+          <a href="./index.html" class="logo footer__logo"
+            >Web<span class="footer__logo--color">Studio</span>
           </a>
           <address class="adress-section">
-            <p class="adress-text">г. Киев, пр-т Леси Украинки, 26</p>
-            <a href="mailto:info@devstudio.com" class="link"
+            <p>г. Киев, пр-т Леси Украинки, 26</p>
+            <a href="mailto:info@devstudio.com" class="adress-section__link"
               >info@devstudio.com</a
             >
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="adress-section__link"
+              >+38 096 111 11 11</a
+            >
           </address>
         </div>
 
-        <div class="networks-wrapper">
-          <h2 class="networks-title">Присоединяйтесь</h2>
-          <ul class="list social-net">
-            <li class="social-web">
-              <a href="" class="link footer-link">
-                <svg class="icon-instagram">
+        <div class="networks">
+          <h2 class="networks__title">Присоединяйтесь</h2>
+          <ul class="networks__list">
+            <li class="networks__item">
+              <a href="" class="networks__link">
+                <svg class="networks__icon">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-web">
-              <a href="" class="link footer-link">
-                <svg class="icon-twitter">
+            <li class="networks__item">
+              <a href="" class="networks__link">
+                <svg class="networks__icon">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-web">
-              <a href="" class="link footer-link">
-                <svg class="icon-facebook">
+            <li class="networks__item">
+              <a href="" class="networks__link">
+                <svg class="networks__icon">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-web">
-              <a href="" class="link footer-link">
-                <svg class="icon-linkedin">
+            <li class="networks__item">
+              <a href="" class="networks__link">
+                <svg class="networks__icon">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -331,13 +335,13 @@
           </ul>
         </div>
 
-        <div class="subscribe-wrapper">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <form class="subscribe-form">
+        <div class="subscribe">
+          <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+          <form class="subscribe__form">
             <input type="email" name="mail" placeholder="E-mail" />
             <button class="button subscribe-btn" type="submit">
               Подписаться
-              <svg class="subscribe-icon" width="24" height="24">
+              <svg class="subscribe__icon" width="24" height="24">
                 <use href="images/sprite.svg#subscribe-icon"></use>
               </svg>
             </button>
