@@ -1,6 +1,11 @@
 .examples {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .examples__container {
@@ -28,6 +33,11 @@
   @media screen and (min-width: $tablet) {
     justify-content: center;
   }
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
 }
 
 .examples__item {
@@ -37,6 +47,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 0px;
   }
 }
 

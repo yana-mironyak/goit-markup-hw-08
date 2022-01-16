@@ -1,14 +1,14 @@
 .speciality {
+  display: block;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .speciality__container {
   @extend %container;
-  display: none;
 
-  @media screen and (min-width: $desctop) {
-    display: block;
-    padding-top: 34px;
-    padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
 }
 

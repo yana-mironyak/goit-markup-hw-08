@@ -1,9 +1,12 @@
 .team {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
   background-color: $secondary-bg;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__container {
@@ -22,7 +25,7 @@
 }
 
 h2 {
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: 1199px) {
     font-size: 28px;
     line-height: 1.17;
     margin-bottom: 30px;

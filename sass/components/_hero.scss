@@ -22,6 +22,11 @@
   background-size: cover;
   background-color: $contrast-bg;
 
+  @media screen and (min-width: $desctop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
   @media screen and (min-width: 769px) {
     background-image: linear-gradient(
         to right,

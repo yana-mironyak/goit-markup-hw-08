@@ -2,8 +2,13 @@
   padding-bottom: 0;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   padding-top: 60px;
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 }
 
 .feature__container {

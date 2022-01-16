@@ -28,6 +28,11 @@ a:hover, a:focus {
   color: #2196f3;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+}
+
 h1 {
   margin-top: 0;
   margin-bottom: 30px;
@@ -346,12 +351,17 @@ h3 {
   .contacts__link {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
 .contacts__item + .contacts__item .contacts__link {
   font-size: 34px;
   line-height: 1.17;
+}
+.contacts__item + .contacts__item .contacts__link:hover, .contacts__item + .contacts__item .contacts__link:focus {
+  color: #2196f3;
 }
 @media screen and (max-width: 376px) {
   .contacts__item + .contacts__item .contacts__link {
@@ -364,6 +374,12 @@ h3 {
     line-height: 1.16;
     padding-bottom: 0;
     color: #757575;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item + .contacts__item .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -458,6 +474,12 @@ h3 {
   background-size: cover;
   background-color: #2f303a;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 @media screen and (min-width: 769px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img@1.jpg);
@@ -510,8 +532,14 @@ h3 {
   padding-bottom: 0;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .feature {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -581,14 +609,15 @@ h3 {
   }
 }
 
-.speciality__container {
-  display: none;
+.speciality {
+  display: block;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-@media screen and (min-width: 1200px) {
+
+@media screen and (max-width: 1199px) {
   .speciality__container {
-    display: block;
-    padding-top: 34px;
-    padding-bottom: 94px;
+    display: none;
   }
 }
 
@@ -714,6 +743,12 @@ h3 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 @media screen and (min-width: 480px) {
   .team__container {
@@ -731,7 +766,7 @@ h3 {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   h2 {
     font-size: 28px;
     line-height: 1.17;
@@ -819,15 +854,23 @@ h3 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
-@media screen and (min-width: 480px) {
-  h2 {
-    font-size: 28px;
-    line-height: 1.17;
-    margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
+@media screen and (min-width: 480px) {
+  .clients__container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__container {
+    width: 768px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .clients__container {
     width: 1200px;
@@ -905,6 +948,11 @@ h3 {
 
 .footer__container {
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .footer__container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__container {
@@ -1289,6 +1337,12 @@ h3 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .examples {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 @media screen and (min-width: 480px) {
   .examples__container {
@@ -1322,6 +1376,12 @@ h3 {
             justify-content: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .examples__list {
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+}
 
 .examples__item {
   margin-right: 8px;
@@ -1329,6 +1389,11 @@ h3 {
 }
 .examples__item:last-child {
   margin-right: 0;
+}
+@media screen and (min-width: 1200px) {
+  .examples__item {
+    margin-bottom: 0px;
+  }
 }
 
 .example__btn {

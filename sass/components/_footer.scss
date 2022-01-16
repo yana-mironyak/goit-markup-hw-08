@@ -9,6 +9,10 @@
   @extend %container;
   text-align: center;
 
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
   @media screen and (min-width: $tablet) {
     width: $tablet;
     display: flex;
@@ -20,7 +24,6 @@
     width: $desctop;
     text-align: start;
   }
-  // display: flex;
 }
 
 .footer__logo {

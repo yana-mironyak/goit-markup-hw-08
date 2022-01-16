@@ -1,20 +1,22 @@
 .clients {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-h2 {
-  @media screen and (min-width: $mobile) {
-    font-size: 28px;
-    line-height: 1.17;
-    margin-bottom: 30px;
+  @media screen and (min-width: $desctop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
 .clients__container {
   @extend %container;
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
 
   @media screen and (min-width: $desctop) {
     width: $desctop;
