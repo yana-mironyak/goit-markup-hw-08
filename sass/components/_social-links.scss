@@ -1,0 +1,23 @@
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.social-links__items {
+  padding-right: 10px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
+  }
+}
+
+.social-links__link {
+  font-size: 18px;
+  line-height: 1.22px;
+  color: $accent-text-color;
+}

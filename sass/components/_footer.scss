@@ -1,5 +1,5 @@
 .footer {
-  display: flex;
+  // display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $contrast-bg;
@@ -7,7 +7,20 @@
 
 .footer__container {
   @extend %container;
-  display: flex;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: $desctop;
+    text-align: start;
+  }
+  // display: flex;
 }
 
 .footer__logo {

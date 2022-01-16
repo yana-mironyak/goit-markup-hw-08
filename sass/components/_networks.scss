@@ -1,10 +1,20 @@
 .networks {
-  margin-left: 70px;
-  padding-top: 12px;
+  @media screen and (max-width: 1199px) {
+    margin-top: 5px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-left: 70px;
+    padding-top: 12px;
+    margin-top: 0;
+  }
 }
 
 .networks__title {
-  text-align: left;
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: bold;
@@ -13,6 +23,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $hero-text-color;
+
+  @media screen and (min-width: $desctop) {
+    text-align: left;
+  }
 }
 
 .networks__list {

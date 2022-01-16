@@ -1,14 +1,20 @@
 .subscribe {
-  margin-left: 93px;
-  padding-top: 12px;
+  margin-top: 60px;
+
+  @media screen and (min-width: $desctop) {
+    margin-top: 0;
+    margin-left: 93px;
+    padding-top: 12px;
+  }
 }
 
 .subscribe__form {
-  display: flex;
+  @media screen and (min-width: $desctop) {
+    display: flex;
+  }
 }
 
 .subscribe__title {
-  text-align: left;
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: bold;
@@ -17,11 +23,16 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $hero-text-color;
+
+  @media screen and (min-width: $desctop) {
+    text-align: left;
+  }
 }
 
 .subscribe__form input {
-  width: 358px;
-  padding-left: 16px;
+  width: 100%;
+  padding: 15px 16px;
+
   background-color: $contrast-bg;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -34,15 +45,26 @@
     border-color: $accent-text-color;
     outline: none;
   }
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 358px;
+  }
 }
 
 .subscribe-btn {
   @extend %button;
   display: flex;
   justify-content: center;
+  margin: auto;
+
+  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-left: 12px;
+
   background-color: $accent-text-color;
   color: $hero-text-color;
   font-size: 16px;
@@ -50,6 +72,11 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   min-width: 200px;
+
+  @media screen and (min-width: $desctop) {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 
 .subscribe__icon {

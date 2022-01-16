@@ -1,22 +1,39 @@
 .examples {
-  display: block;
-  justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .examples__container {
   @extend %container;
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: $desctop;
+  }
 }
 
 .examples__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  margin-right: -8px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
 }
 
 .examples__item {
-  margin-right: 9px;
+  // margin-right: 9px;
+  margin-right: 8px;
+  margin-bottom: 15px;
 
   &:last-child {
     margin-right: 0;
